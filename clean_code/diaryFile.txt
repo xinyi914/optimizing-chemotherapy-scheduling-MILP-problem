@@ -1,0 +1,229 @@
+
+p =
+
+    15
+     9
+     8
+     5
+     8
+     2
+     0
+
+[Warning: A non-empty cvx problem already exists in this scope.
+   It is being overwritten.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cvxprob', '/Users/xinyi/Documents/MATLAB/cvx/lib/@cvxprob/cvxprob.m', 28)" style="font-weight:bold">cvxprob</a> (<a href="matlab: opentoline('/Users/xinyi/Documents/MATLAB/cvx/lib/@cvxprob/cvxprob.m',28,0)">line 28</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cvx_begin', '/Users/xinyi/Documents/MATLAB/cvx/commands/cvx_begin.m', 41)" style="font-weight:bold">cvx_begin</a> (<a href="matlab: opentoline('/Users/xinyi/Documents/MATLAB/cvx/commands/cvx_begin.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('model_1', '/Users/xinyi/Library/Mobile Documents/com~apple~CloudDocs/Desktop/optimization research/clean_code/model_1.m', 227)" style="font-weight:bold">model_1</a> (<a href="matlab: opentoline('/Users/xinyi/Library/Mobile Documents/com~apple~CloudDocs/Desktop/optimization research/clean_code/model_1.m',227,0)">line 227</a>)] 
+ 
+Calling Mosek 9.1.9: 96927 variables, 96215 equality constraints
+------------------------------------------------------------
+
+MOSEK Version 9.1.9 (Build date: 2019-11-21 11:32:15)
+Copyright (c) MOSEK ApS, Denmark. WWW: mosek.com
+Platform: MACOSX/64-X86
+
+Problem
+  Name                   :                 
+  Objective sense        : min             
+  Type                   : LO (linear optimization problem)
+  Constraints            : 96215           
+  Cones                  : 0               
+  Scalar variables       : 96927           
+  Matrix variables       : 0               
+  Integer variables      : 96439           
+
+Optimizer started.
+Mixed integer optimizer started.
+Threads used: 12
+Presolve started.
+Presolve terminated. Time = 0.72
+Presolved problem: 476 variables, 95 constraints, 2109 non-zeros
+Presolved problem: 6 general integer, 470 binary, 0 continuous
+Clique table size: 323
+BRANCHES RELAXS   ACT_NDS  DEPTH    BEST_INT_OBJ         BEST_RELAX_OBJ       REL_GAP(%)  TIME  
+0        0        1        0        2.2610000000e+03     NA                   NA          1.2   
+0        1        1        0        2.2610000000e+03     1.6000000000e+01     99.29       1.2   
+0        1        1        0        1.6000000000e+01     1.6000000000e+01     0.00e+00    1.2   
+An optimal solution satisfying the relative gap tolerance of 1.00e-02(%) has been located.
+The relative gap is 0.00e+00(%).
+An optimal solution satisfying the absolute gap tolerance of 0.00e+00 has been located.
+The absolute gap is 0.00e+00.
+
+Objective of best integer solution : 1.600000000000e+01      
+Best objective bound               : 1.600000000000e+01      
+Construct solution objective       : Not employed
+User objective cut value           : Not employed
+Number of cuts generated           : 0
+Number of branches                 : 0
+Number of relaxations solved       : 1
+Number of interior point iterations: 9
+Number of simplex iterations       : 0
+Time spend presolving the root     : 0.72
+Time spend optimizing the root     : 0.02
+Mixed integer optimizer terminated. Time: 1.22
+
+Optimizer terminated. Time: 1.28    
+
+
+Integer solution solution summary
+  Problem status  : PRIMAL_FEASIBLE
+  Solution status : INTEGER_OPTIMAL
+  Primal.  obj: 1.6000000000e+01    nrm: 2e+01    Viol.  con: 0e+00    var: 4e-16    itg: 4e-16  
+Optimizer summary
+  Optimizer                 -                        time: 1.28    
+    Interior-point          - iterations : 0         time: 0.00    
+      Basis identification  -                        time: 0.00    
+        Primal              - iterations : 0         time: 0.00    
+        Dual                - iterations : 0         time: 0.00    
+        Clean primal        - iterations : 0         time: 0.00    
+        Clean dual          - iterations : 0         time: 0.00    
+    Simplex                 -                        time: 0.00    
+      Primal simplex        - iterations : 0         time: 0.00    
+      Dual simplex          - iterations : 0         time: 0.00    
+    Mixed integer           - relaxations: 1         time: 1.22    
+
+------------------------------------------------------------
+Status: Solved
+Optimal value (cvx_optval): +16
+ 
+
+ans =
+
+     2
+
+
+ans =
+
+     1
+
+
+ans =
+
+     0
+
+
+ans =
+
+     0
+
+x_s
+[i,iprime,jprime,t,chair]1
+1 1 1 2 2
+[i,iprime,jprime,t,chair]2
+1 1 2 2 3
+[i,iprime,jprime,t,chair]3
+3 3 1 3 5
+[i,iprime,jprime,t,chair]4
+1 1 2 3 4
+[i,iprime,jprime,t,chair]5
+5 5 1 4 7
+[i,iprime,jprime,t,chair]6
+2 2 1 5 1
+[i,iprime,jprime,t,chair]7
+2 2 2 5 2
+[i,iprime,jprime,t,chair]8
+1 1 1 6 3
+[i,iprime,jprime,t,chair]9
+1 1 1 7 8
+[i,iprime,jprime,t,chair]10
+4 4 1 7 9
+[i,iprime,jprime,t,chair]11
+1 1 1 8 3
+[i,iprime,jprime,t,chair]12
+3 3 1 8 10
+[i,iprime,jprime,t,chair]13
+1 1 1 9 1
+[i,iprime,jprime,t,chair]14
+2 2 1 9 2
+[i,iprime,jprime,t,chair]15
+3 3 1 9 11
+[i,iprime,jprime,t,chair]16
+4 4 1 9 12
+[i,iprime,jprime,t,chair]17
+6 6 1 9 13
+[i,iprime,jprime,t,chair]18
+2 2 2 9 8
+[i,iprime,jprime,t,chair]19
+2 2 1 10 4
+[i,iprime,jprime,t,chair]20
+4 4 1 10 14
+[i,iprime,jprime,t,chair]21
+1 1 1 11 1
+[i,iprime,jprime,t,chair]22
+1 1 2 11 5
+[i,iprime,jprime,t,chair]23
+2 2 1 13 1
+[i,iprime,jprime,t,chair]24
+4 4 1 13 5
+[i,iprime,jprime,t,chair]25
+6 6 1 13 8
+[i,iprime,jprime,t,chair]26
+5 7 1 14 4
+[i,iprime,jprime,t,chair]27
+5 5 1 16 10
+[i,iprime,jprime,t,chair]28
+2 4 1 17 1
+[i,iprime,jprime,t,chair]29
+4 4 2 17 11
+[i,iprime,jprime,t,chair]30
+2 2 1 20 7
+[i,iprime,jprime,t,chair]31
+1 1 1 21 2
+[i,iprime,jprime,t,chair]32
+5 5 1 21 12
+[i,iprime,jprime,t,chair]33
+5 5 1 22 14
+[i,iprime,jprime,t,chair]34
+3 3 1 23 2
+[i,iprime,jprime,t,chair]35
+5 5 1 23 9
+[i,iprime,jprime,t,chair]36
+1 1 1 24 7
+[i,iprime,jprime,t,chair]37
+5 5 1 25 5
+[i,iprime,jprime,t,chair]38
+3 3 1 28 6
+[i,iprime,jprime,t,chair]39
+3 3 2 28 7
+[i,iprime,jprime,t,chair]40
+3 3 1 29 13
+[i,iprime,jprime,t,chair]41
+2 2 1 31 2
+[i,iprime,jprime,t,chair]42
+1 1 1 32 10
+[i,iprime,jprime,t,chair]43
+3 3 1 32 3
+[i,iprime,jprime,t,chair]44
+1 1 1 33 8
+[i,iprime,jprime,t,chair]45
+1 1 1 34 10
+[i,iprime,jprime,t,chair]46
+1 1 1 35 2
+y_s
+[i,iprime,ipprime,jprime,jpprime,t,chair]1
+5 4 4 1 1 4 6
+v_s
+    15
+     9
+     8
+     5
+     8
+     2
+     0
+
+Elapsed time is 7.936754 seconds.
+
+num_o1 =
+
+     2
+
+
+num_o2 =
+
+     1
+
+
+num_o3 =
+
+     0
+
