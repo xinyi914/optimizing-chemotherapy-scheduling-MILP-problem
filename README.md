@@ -6,3 +6,5 @@ Data are generated in the folder "data".
 Model 1 and model 2 are writted in jupyter notebook. Model3 is organized in main.py.
 
 More details about model 3 can be found in "model3_presentation.pptx"
+
+The folder named "clean_code" is the clean code in matlab for model 1 and model 2 and the first step of model 3
